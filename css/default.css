@@ -7,33 +7,9 @@ body {
     color: black;
     margin: 0px auto 0px auto;
     padding: 1ex;
-    max-width: 800px;
+    max-width: 600px;
 }
 
-@media (min-width: 900px) {
-    #image {
-        display: block;
-        float: right;
-        border: 1px solid grey;
-	border-radius:5px;
-	padding: 0px;
-        margin-left: 2em;
-	margin-top: 0ex;
-	margin-bottom: 1ex;
-    }
-}
-@media (max-width: 900px) {
-    #image {
-        display: block;
-        border: 1px solid grey;
-	border-radius:5px;
-	padding: 0px;
-        margin-left: auto;
-        margin-right: auto;
-	margin-top: 0ex;
-	margin-bottom: 1em;
-    }
-}
 
 div#footer {
     border-top: solid 2px black;
@@ -103,6 +79,39 @@ address {
 }
 
 
+/* Narrow v. wide */
+
+@media (min-width: 700px) {
+    #image {
+        display: block;
+        float: right;
+        border: 1px solid grey;
+	border-radius:5px;
+	padding: 0px;
+        margin-left: 2em;
+	margin-top: 0ex;
+	margin-bottom: 1ex;
+    }
+}
+@media (max-width: 700px) {
+    #image {
+        display: block;
+        border: 1px solid grey;
+	border-radius:5px;
+	padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+	margin-top: 0ex;
+	margin-bottom: 1em;
+    }
+
+    address {
+	width: 240px;
+	padding-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 /* Font-Zeug */
 
